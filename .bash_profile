@@ -1,5 +1,7 @@
-export PS1="\[\e[36m\]\u\[\e[m\]\[\e[1;33m\]@ \[\e[m\]\[\e[1;34m\]\W\[\e[m\] \[\e[1;35m\]\\$\[\e[m\] \[\e[1;33m\]=>\[\e[m\] "
+defaults write com.apple.finder AppleShowAllFiles True; 
 
+
+export PS1="\[\e[36m\]\u\[\e[m\]\[\e[1;33m\]@ \[\e[m\]\[\e[1;34m\]\W\[\e[m\] \[\e[1;35m\]\\$\[\e[m\] \[\e[1;33m\]=>\[\e[m\] "
 
 export CLICOLOR=1
 export LSCOLORS=ExFxBxDxCxegedabagacad
