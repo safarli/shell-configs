@@ -1,7 +1,12 @@
 defaults write com.apple.finder AppleShowAllFiles True; 
 
+declare -a StringArray=("🦊" "🐥" "🐝" "🐸" "🐆" "🦜" "🐬" "🦁" "🍀" "🔥");
 
-export PS1="\[\e[36m\]\u\[\e[m\]\[\e[1;33m\]@ \[\e[m\]\[\e[1;34m\]\W\[\e[m\] \[\e[1;35m\]\\$\[\e[m\] \[\e[1;33m\]=>\[\e[m\] "
+RANDNUMBER=$(($RANDOM % 10));
+
+RANDEMOJI=${StringArray[$RANDNUMBER]};
+
+export PS1="$RANDEMOJI \[\e[36m\]\u\[\e[m\]\[\e[1;33m\]@ \[\e[m\]\[\e[1;35m\]\W\[\e[m\] \[\e[1;32m\]\\$\[\e[m\] \[\e[1;31m\]=>\[\e[m\] "
 
 export CLICOLOR=1
 #export LSCOLORS=ExFxBxDxCxegedabagacad
